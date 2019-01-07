@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+    <include layout="@layout/toolbar_layout" />
+
+
+    <!--private String mLeftTextString;-->
+    <!--private String mLeftTopTextString;-->
+    <!--private String mLeftBottomTextString;-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="借钱需完成一下操作:"
+        android:textSize="14sp"
+        android:textColor="#656565"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+                    <LinearLayout
+                        android:id="@+id/ll_certification"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        >
+                     <com.allen.library.SuperTextView
+                            android:id="@+id/st_sesame_certification"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                             android:layout_weight="1"
+                            app:sLeftIconRes="@mipmap/iv_sesame_cert"
+                            app:sLeftViewGravity="left_center"
+                            app:sLeftTopTextString="芝麻认证"
+                            app:sLeftBottomTextString="将打开支付宝App进行认证"
+                            app:sRightTextString="已认证"
+                            app:sLeftTopTextSize="16sp"
+                            app:sLeftBottomTextSize="14sp"
+                            app:sRightTextSize="14sp"
+                            app:sLeftTopTextColor="@color/perinfo_auth_tv_black"
+                            app:sLeftBottomTextColor="@color/perinfo_auth_tv_grave"
+                         app:sRightTextColor="@color/black"
+                         app:sDividerLineColor="@color/white"
+
+                        >
+                        </com.allen.library.SuperTextView>
+                        <ImageView
+                            android:id="@+id/iv_certification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/my_next"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_license"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        >
+                        <com.allen.library.SuperTextView
+                            android:id="@+id/st_sesame_license"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:sLeftIconRes="@mipmap/iv_sesame"
+                            app:sLeftViewGravity="left_center"
+                            app:sLeftTopTextString="芝麻信用评分授权"
+                            app:sLeftBottomTextString="将下发短信进行校验"
+                            app:sRightTextString="已授权"
+                            app:sLeftTopTextSize="16sp"
+                            app:sLeftBottomTextSize="14sp"
+                            app:sRightTextSize="14sp"
+                            app:sLeftTopTextColor="@color/perinfo_auth_tv_black"
+                            app:sLeftBottomTextColor="@color/perinfo_auth_tv_grave"
+                            app:sRightTextColor="@color/black"
+                            app:sDividerLineColor="@color/white"
+                            >
+                        </com.allen.library.SuperTextView>
+                        <ImageView
+                            android:id="@+id/iv_license"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/my_next"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bangcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        >
+                        <com.allen.library.SuperTextView
+                            android:id="@+id/st_bangcard"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:sLeftIconRes="@mipmap/iv_bangcard"
+                            app:sLeftViewGravity="left_center"
+                            app:sLeftTopTextString="绑定信用卡"
+                            app:sLeftBottomTextString="绑定后设置交易密码"
+                            app:sRightTextString="去添加"
+                            app:sLeftTopTextSize="16sp"
+                            app:sLeftBottomTextSize="14sp"
+                            app:sRightTextSize="14sp"
+                            app:sLeftTopTextColor="@color/perinfo_auth_tv_black"
+                            app:sLeftBottomTextColor="@color/perinfo_auth_tv_grave"
+                            app:sRightTextColor="@color/black"
+                            app:sDividerLineColor="@color/white"
+
+                            >
+                        </com.allen.library.SuperTextView>
+                        <ImageView
+                            android:id="@+id/iv_bangcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/my_next"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:background="@color/white"
+                        android:layout_marginTop="10dp"
+                        >
+                        <com.allen.library.SuperTextView
+                            android:id="@+id/st_help"
+                            android:layout_width="0dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            app:sLeftIconRes="@mipmap/iv_vip"
+                            app:sLeftViewGravity="left_center"
+                            app:sLeftTopTextString="开通会员"
+                            app:sLeftBottomTextString="开通会员即可无息借钱"
+                            app:sRightTextString="去开通"
+                            app:sLeftTopTextSize="16sp"
+                            app:sLeftBottomTextSize="14sp"
+                            app:sRightTextSize="14sp"
+                            app:sLeftTopTextColor="@color/perinfo_auth_tv_black"
+                            app:sLeftBottomTextColor="@color/perinfo_auth_tv_grave"
+                            app:sRightTextColor="@color/black"
+                            app:sDividerLineColor="@color/white"
+                            >
+                        </com.allen.library.SuperTextView>
+                    <ImageView
+                        android:id="@+id/iv_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/my_next"
+                        />
+                    </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

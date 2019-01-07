@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="真实姓名:"
+            app:sRightTextString="*清风"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sRightTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="@dimen/change_bankcard_tv_size"
+
+            app:sRightTextSize="@dimen/change_bankcard_tv_size"
+
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_detail_personal_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="身份证号:"
+            app:sRightTextString=""
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sRightTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="@dimen/change_bankcard_tv_size"
+            app:sRightTextSize="@dimen/change_bankcard_tv_size"
+            android:visibility="gone"
+            >
+        </com.allen.library.SuperTextView>
+        
+        
+        
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_detail_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="银行卡号:"
+            app:sRightTextString=""
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sRightTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="@dimen/change_bankcard_tv_size"
+            app:sRightTextSize="@dimen/change_bankcard_tv_size"
+            android:visibility="gone"
+            >
+        </com.allen.library.SuperTextView>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_detail_personal_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证号:"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/agreement_tv_black"
+                />
+
+            <TextView
+                android:id="@+id/tv_detail_personal_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="14sp"
+                android:textSize="@dimen/brrow_tv_size"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/agreement_tv_black"
+                />
+
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/v_hline"
+            style="@style/HlineViewStyle_E5"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_detail_card_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="银行卡号:"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/agreement_tv_black"
+                />
+
+            <TextView
+                android:id="@+id/tv_detail_card_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="12345678901234567890123"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/agreement_tv_black"
+                />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/v_hline2"
+            style="@style/HlineViewStyle_E5"
+            android:layout_below="@+id/tv_detail_personal_msg"
+            />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_bankcard_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="开户银行:"
+            app:sRightTextString=""
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sRightTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="@dimen/change_bankcard_tv_size"
+            app:sRightTextSize="@dimen/change_bankcard_tv_size"
+            >
+        </com.allen.library.SuperTextView>
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_detail_card_usetime"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="卡有效期:"
+            app:sRightTextString=""
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sRightTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="@dimen/change_bankcard_tv_size"
+            app:sRightTextSize="@dimen/change_bankcard_tv_size"
+            >
+        </com.allen.library.SuperTextView>
+
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_detail_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="预留手机号:"
+            app:sRightTextString=""
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sRightTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="@dimen/change_bankcard_tv_size"
+            app:sRightTextSize="@dimen/change_bankcard_tv_size"
+            app:sDividerLineColor="@color/white"
+            >
+        </com.allen.library.SuperTextView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

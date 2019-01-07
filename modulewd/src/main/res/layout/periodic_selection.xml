@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:text="借款周期"
+    android:textSize="@dimen/brrow_tv_size"
+    android:textColor="@color/perinfo_auth_tv_black"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    />
+
+    <View
+        style="@style/HlineViewStyle_E5"
+        />
+
+    <GridView
+        android:id="@+id/gv_check"
+        android:layout_width="match_parent"
+        android:layout_height="176dp">
+
+
+    </GridView>
+
+
+
+    <View
+        style="@style/HlineViewStyle_E5"
+        android:layout_below="@+id/tv_borrow_banktime"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:textSize="@dimen/brrow_tv_size"
+        android:textColor="@color/perinfo_auth_tv_black"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext.android
+def librarys = rootProject.ext.dependencies
+
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile librarys.supportV7
+    compile librarys.design
+
+//    compile librarys.butterknife
+//    annotationProcessor librarys.butterknifeCompiler
+    compile librarys.gson
+    compile librarys.SmartRefreshLayout
+    compile librarys.BaseRecyclerViewAdapterHelper
+    compile librarys.SuperTextView
+    compile librarys.gif
+    compile librarys.barlibrary
+
+    //retrofit
+    compile librarys.retrofit2
+    compile librarys.convertergson
+    compile librarys.adapterrxjava2
+    compile librarys.logginginterceptor
+    //rx
+    compile librarys.rxjava
+    compile librarys.rxandroid
+    compile librarys.rxbinding
+    compile librarys.rxlifecycle
+    compile librarys.rxlifecyclecomponents
+    compile librarys.rxpermissions
+}
+
+apply plugin: 'maven'
+
+uploadArchives{
+    repositories{
+        mavenDeployer{
+            repository(url:'file:F:/androidmaven')
+            pom.project{
+                groupId 'com.yltx.modulebase'
+                artifactId 'baselib'
+                version '1.0.1'
+            }
+        }
+    }
+}

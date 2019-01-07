@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+
+
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+    <!--帮助中心-->
+
+    <include layout="@layout/toolbar_layout" />
+
+
+
+
+    <WebView
+        android:id="@+id/webView_issue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/webViewErr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/webViewRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:src="@mipmap/iv_load_err" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/webViewRefresh"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="网络出错,轻触屏幕重新加载~"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_loan_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="常见问题"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_loan_contract"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="借款说明"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_commission_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextString="还款说明"
+        app:sLeftTextColor="@color/agreement_tv_black"
+        app:sLeftTextSize="16sp"
+        app:sRightTvDrawableRight="@mipmap/my_next"
+        >
+    </com.allen.library.SuperTextView>
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_personal_information"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="用户借款相关协议"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_sesame_certification_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="用户开通用户协议"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_aboutours"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="关于我们"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_callme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="联系客服"
+            app:sRightTextString=""
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTextColor="@color/perinfo_auth_tv_blue"
+
+            >
+        </com.allen.library.SuperTextView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.authentication.BindCreditCardYActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/tvob"
+        android:drawableLeft="@mipmap/ic_tip_bank"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="您只需完成以下4步验证就可以无息借款喔~"
+        android:textColor="@color/tvo"
+        android:textSize="12sp" />
+
+    <include layout="@layout/sesame_progress" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorBg" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/ic_ca_ok" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="恭喜您，绑卡成功！"
+        android:textColor="@color/base_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:text="点击下一步，设置您的银行卡交易密码吧"
+        android:textColor="@color/tv9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/bg_bank">
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="中国农业银行（信用卡）"
+            android:textColor="@color/tv3" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_bank"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="手机尾号2017"
+            android:textColor="@color/tv6" />
+
+        <TextView
+            android:id="@+id/tv_bank_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_bank"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:text="**** **** **** **** 2017"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_do"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="25dp"
+        android:text="下一步，设置交易密码"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cardno"
+        app:sCornersRadius="3dp"
+        app:sSelectorNormalColor="@color/base_color"
+        app:sSelectorPressedColor="@color/click_color"
+        app:sUseSelector="true" />
+</LinearLayout>

@@ -1,0 +1,115 @@
+<resources>
+
+    /************************************************* base *************************************/
+
+
+    <style name="HlineViewStyle_dc">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#dcdcdc</item>
+    </style>
+
+
+
+    /************************************************* checkbox*************************************/
+
+
+    <style name="LookCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_cb_agreement</item>
+    </style>
+
+
+
+    <style name="HlineViewStyle_E5">
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/line_grave_e5</item>
+    </style>
+
+    <!--<style name="HlineViewStyle_F">-->
+        <!--<item name="android:layout_height">0.5dp</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:background">@drawable/shape_line</item>-->
+    <!--</style>-->
+
+
+
+
+    <style name="TLookCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_cb_tolook</item>
+    </style>
+
+
+
+
+
+
+
+    <style name="checkBoxProtocol">
+        <item name="android:button">@drawable/cb_protocol</item>
+    </style>
+
+    <style name="checkBoxList">
+        <item name="android:button">@drawable/cb_list</item>
+    </style>
+
+    <style name="checkBoxPay">
+        <item name="android:button">@drawable/cb_pay</item>
+    </style>
+
+    <style name="TabLayout">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tv6</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+
+
+
+    <!--<style name="InputStyle">-->
+        <!--<item name="android:textColorHint">@color/input_hint</item>-->
+        <!--<item name="android:textColor">@color/input</item>-->
+        <!--<item name="android:layout_height">48dp</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:background">@drawable/dialog_white_round_corner_bg</item>-->
+        <!--<item name="android:textSize">14sp</item>-->
+        <!--<item name="android:paddingLeft">8dp</item>-->
+        <!--<item name="android:paddingRight">8dp</item>-->
+        <!--<item name="android:drawablePadding">8dp</item>-->
+    <!--</style>-->
+
+
+    /************************************************* dialog *************************************/
+
+    <style name="DialogTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/tv3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DialogContentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/tv6</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">8dp</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+    /************************************************* button *************************************/
+    <style name="DialogButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+</resources>

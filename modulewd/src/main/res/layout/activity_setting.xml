@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+
+
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+    <!--帮助中心-->
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_modify_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="修改交易密码"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            app:sDividerLineColor="@color/white"
+            >
+        </com.allen.library.SuperTextView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

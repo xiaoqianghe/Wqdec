@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yltx.modulewd">
+
+    <application>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".AccountActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".borrow.detail.BorrowDetailActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".borrow.lsit.ListActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".user.HelperCenterActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".user.UserInfoActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".user.UserLoanAgreementActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".user.PersonalInfoAuthActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".aboutcard.BankCardListActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".aboutcard.ChangeBankCardActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".borrow.borrowoperate.OperateActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".borrow.borrowoperate.OperateStatusActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".user.ResetPwdActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.SesameCertificationNActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/BaseAppTheme">
+            <intent-filter>
+                <data android:scheme="xmbk" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".authentication.SesameCertificationYActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.SesameCreditNActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.SesameCreditIActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.SesameCreditYActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.BindCreditCardNActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.BindCreditCardYActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.TransationPasswordActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.OpenMemberActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".authentication.OpenMemberYActivity"
+            android:theme="@style/BaseAppTheme" />
+
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name=".user.SettingActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".aboutcard.CardDeatilActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".user.ModifyPwdActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".borrow.lsit.PrePaymentActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity
+            android:name=".borrow.amortization.AmortizationLoanActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity android:name=".borrow.amortization.AmortizationActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/BaseAppTheme" />
+
+
+        <activity android:name=".user.other.IssueQuestionActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity android:name=".user.other.LoanInstructionsActivity"
+            android:theme="@style/BaseAppTheme" />
+        <activity android:name=".user.other.RepaymentInstructionsActivity"
+            android:theme="@style/BaseAppTheme" />
+
+        <activity android:name=".user.other.AboutMeActivity"
+            android:theme="@style/BaseAppTheme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_accout"
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:background="#2eaeed"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true">
+
+
+
+        <ImageView
+            android:id="@+id/my_iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/account_avator"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/my_tv_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/my_iv_avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/my_iv_avatar"
+            android:text="账户："
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/my_tv_account_value"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/my_iv_avatar"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/my_tv_account"
+            android:text="131******21"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+        <ImageView
+            android:id="@+id/iv_user_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/my_iv_avatar"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/my_tv_account_value"
+            android:src="@mipmap/account_novip"
+            />
+
+
+        <TextView
+            android:id="@+id/my_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="您的等级："
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/my_tv_account"
+            android:layout_toRightOf="@+id/my_iv_avatar"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/my_tv_level_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="V3"
+            android:textSize="14sp"
+            android:textColor="#ffb54c"
+            android:layout_below="@+id/my_tv_account"
+            android:layout_toRightOf="@+id/my_tv_level"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/my_tv_believe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="信用分："
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/my_tv_account"
+            android:layout_toRightOf="@+id/my_tv_level_value"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/my_tv_believe_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="70"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/my_tv_account"
+            android:layout_toRightOf="@+id/my_tv_believe"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/my_tv_usetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="会员有效期："
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/my_tv_level"
+            android:layout_toRightOf="@+id/my_iv_avatar"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <TextView
+            android:id="@+id/my_tv_usetime_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="2017-09-27~2017-09-28"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/my_tv_believe"
+            android:layout_toRightOf="@+id/my_tv_usetime"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/rl_accout"
+        >
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_borrowrecord"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTvDrawableLeft="@mipmap/acount_iv_borrowrecord"
+            app:sLeftTextString="借还记录"
+            app:sLeftTextColor="@color/account_tv_black"
+            app:sLeftTextSize="16sp"
+            android:layout_marginTop="10dp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_cardmanager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTvDrawableLeft="@mipmap/account_iv_cardmanager"
+            app:sLeftTextString="银行卡管理"
+            app:sLeftTextColor="@color/account_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_personalinfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTvDrawableLeft="@mipmap/account_iv_personalinfo"
+            app:sLeftTextString="个人信息认证"
+            app:sLeftTextColor="@color/account_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_help"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTvDrawableLeft="@mipmap/account_iv_helper"
+            app:sLeftTextString="帮助中心"
+            app:sLeftTextColor="@color/account_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yltx.modulewd.borrow.lsit.LoanFragment">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="待还总金额"
+                android:textColor="@color/tv6" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_money_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_money"
+                    android:text="￥"
+                    android:textColor="@color/tv3"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_money_title"
+                    android:textColor="@color/tv3"
+                    android:textSize="50sp"
+                    android:text="0" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorBg" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_prepayment"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:background="@color/white"
+            app:sLeftBottomTextColor="@color/tv6"
+            app:sLeftBottomTextSize="13sp"
+            app:sLeftBottomTextString="可提前还清所有借款"
+            app:sLeftTextColor="@color/tv3"
+            app:sLeftTextSize="16sp"
+            app:sLeftTextString="提前还款"
+            app:sLeftViewGravity="left_center"
+            app:sRightIconRes="@mipmap/ic_list_item_next"
+            app:sRightTextColor="@color/tv9"
+            app:sRightTextSize="13sp"
+            app:sRightTextString="共 0 笔"
+            app:sUseRipple="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorBg" />
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/stv_amortization"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:background="@color/white"
+            app:sLeftBottomTextColor="@color/tv6"
+            app:sLeftBottomTextSize="13sp"
+            app:sLeftBottomTextString="还款日将自动扣款"
+            app:sLeftTextColor="@color/tv3"
+            app:sLeftTextSize="16sp"
+            app:sLeftTextString="分期还款"
+            app:sLeftViewGravity="left_center"
+            app:sRightIconRes="@mipmap/ic_list_item_next"
+            app:sRightTextColor="@color/tv9"
+            app:sRightTextSize="13sp"
+            app:sRightTextString="待还 0.0 元"
+            app:sUseRipple="true" />
+    </LinearLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

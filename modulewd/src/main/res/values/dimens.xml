@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_edit_item_height">54dip</dimen>
+
+    <dimen name="common_super_height">50dip</dimen>
+
+    <dimen name="margin_bottom_height">40dip</dimen>
+
+
+
+
+
+
+
+
+
+    <dimen name="brrow_tv_size">16sp</dimen>
+
+    <dimen name="change_bankcard_tv_size">14sp</dimen>
+
+
+    <dimen name="margin_space">10dp</dimen>
+    <dimen name="input_container_height">44dip</dimen>
+    <dimen name="input_margin_height">10dip</dimen>
+
+
+
+
+
+</resources>

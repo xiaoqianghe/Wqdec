@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.authentication.SesameCreditIActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/tvob"
+        android:drawableLeft="@mipmap/ic_tip_bank"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="您只需完成以下4步验证就可以无息借款喔~"
+        android:textColor="@color/tvo"
+        android:textSize="12sp" />
+
+    <include layout="@layout/sesame_progress" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="姓        名："
+            android:textColor="@color/tv3" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/tv3"
+            android:layout_marginRight="10dp"
+            tools:text="*姓名" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="身份证号："
+            android:textColor="@color/tv3" />
+
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/tv3"
+            android:layout_marginRight="10dp"
+            tools:text="45*************00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="手机号码："
+            android:textColor="@color/tv3" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/tv3"
+            android:layout_marginRight="10dp"
+            tools:text="135****0000" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorBg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="验  证  码："
+            android:textColor="@color/tv3" />
+
+        <com.yltx.modulebase.widget.ClearEditTextView
+            android:id="@+id/et_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:hint="请输入验证码"
+            android:textSize="14sp"
+            android:textColorHint="@color/tv9"
+
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_cardno"
+            app:sCornersRadius="3dp"
+            app:sSelectorDisableColor="@color/tvob"
+            app:sSelectorNormalColor="@color/tvo"
+            app:sSelectorPressedColor="@color/tvob"
+            app:sUseSelector="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorBg" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_do"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="22dp"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cardno"
+        app:sCornersRadius="3dp"
+        app:sSelectorNormalColor="@color/base_color"
+        app:sSelectorPressedColor="@color/click_color"
+        app:sUseSelector="true" />
+
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.authentication.OpenMemberActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:background="@color/tvob"
+                android:drawableLeft="@mipmap/ic_tip_bank"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="您只需完成以下4步验证就可以无息借款喔~"
+                android:textColor="@color/tvo"
+                android:textSize="12sp" />
+
+            <include layout="@layout/sesame_progress" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorBg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/ic_recharge" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/iv_avatar"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="充值账号："
+                        android:textColor="@color/tv3"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="成为会员，365天借款无利息"
+                        android:textColor="@color/tvo" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorBg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="会员套餐"
+                android:textColor="@color/tv6" />
+
+            <TextView
+                android:id="@+id/tv_annualfee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@mipmap/ic_vip_200"
+                android:gravity="center"
+                android:textColor="@color/tvo"
+                android:textSize="18sp"
+                tools:text="200元/年" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="会员有效期" />
+
+            <TextView
+                android:id="@+id/tv_trem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                tools:text="2017-9-1~2018-9-1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorBg" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="支付方式"
+                android:textColor="@color/tv6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="88dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/ic_vip_pay_ali"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:text="支付宝支付"
+                        android:textColor="@color/tv3"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:drawableLeft="@mipmap/ic_vip_pay_wechat"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:text="微信支付"
+                            android:textColor="@color/tv3"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_wechat_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="（未安装微信客户端）"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp">
+
+                        <RadioButton
+                            android:id="@+id/rb_ali"
+                            style="@style/checkBoxPay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_marginRight="16dp"
+                            android:checked="true" />
+
+                        <RadioButton
+                            android:id="@+id/rb_wechat"
+                            style="@style/checkBoxPay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_marginRight="16dp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBg"
+                android:paddingBottom="16dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    style="@style/checkBoxProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="本人已阅读并同意平台"
+                    android:textColor="@color/tv6"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="【用户开通会员协议】"
+                    android:textColor="@color/base_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="相关内容"
+                    android:textColor="@color/tv6"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.allen.library.SuperButton
+                android:id="@+id/btn_do"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:text="开通会员"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cardno"
+                app:sCornersRadius="3dp"
+                app:sSelectorNormalColor="@color/base_color"
+                app:sSelectorPressedColor="@color/click_color"
+                app:sUseSelector="true" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

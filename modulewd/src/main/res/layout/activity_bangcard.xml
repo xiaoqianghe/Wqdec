@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.yltx.modulewd.MainActivity">
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/red_mark_iv"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="只支持添加 [信用卡] ，不支持 [储蓄卡]"
+            android:textSize="@dimen/change_bankcard_tv_size"
+            android:textColor="@color/tvorg"
+            android:layout_marginLeft="6dp"
+            />
+    </LinearLayout>
+
+            <!--<View-->
+                <!--style="@style/HlineViewStyle_E5"-->
+                <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/input_container_height"-->
+        <!--android:background="@color/white">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="4dp"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/tvorg"-->
+            <!--android:textSize="@dimen/change_bankcard_tv_size"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="真实姓名:"-->
+            <!--android:textColor="@color/tvblack"-->
+            <!--android:textSize="@dimen/change_bankcard_tv_size" />-->
+
+        <!--<com.yltx.modulebase.widget.ClearEditTextView-->
+            <!--android:id="@+id/myca_et_pername"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/input_container_height"-->
+            <!--android:background="@color/white"-->
+            <!--android:hint="请输入"-->
+            <!--android:maxLength="11"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:textSize="@dimen/change_bankcard_tv_size"-->
+            <!--android:textColorHint="@color/tvgrave"-->
+            <!--android:textColor="@color/tvblack"-->
+            <!--android:gravity="right|center_vertical"-->
+            <!--android:imeOptions="actionDone"-->
+
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+            <!--<View-->
+                <!--style="@style/HlineViewStyle_E5"-->
+                <!--/>-->
+            <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/input_container_height"-->
+        <!--android:background="@color/white">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="4dp"-->
+            <!--android:text="*"-->
+            <!--android:textColor="@color/tvorg"-->
+            <!--android:textSize="@dimen/change_bankcard_tv_size"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+
+            <!--android:text="身份证号:"-->
+            <!--android:textColor="@color/tvblack"-->
+            <!--android:textSize="@dimen/change_bankcard_tv_size"/>-->
+
+        <!--<com.yltx.modulebase.widget.ClearEditTextView-->
+            <!--android:id="@+id/myca_et_pernum"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/input_container_height"-->
+            <!--android:background="@color/white"-->
+            <!--android:hint="请输入"-->
+            <!--android:maxLength="20"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="16dp"-->
+            <!--android:textSize="@dimen/change_bankcard_tv_size"-->
+            <!--android:textColorHint="@color/tvgrave"-->
+            <!--android:textColor="@color/tvblack"-->
+            <!--android:gravity="right|center_vertical"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+            <View
+                android:id="@+id/v_hline"
+                style="@style/HlineViewStyle_E5"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_name_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:text="*"
+                    android:textColor="@color/tvorg"
+                    android:textSize="@dimen/change_bankcard_tv_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="真实姓名:"
+                    android:textColor="@color/tvblack"
+                    android:textSize="@dimen/change_bankcard_tv_size"
+                    android:layout_toRightOf="@+id/tv_name_red"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="12345678901234567890123"
+                    android:textSize="14sp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/agreement_tv_black"
+                    android:gravity="center_vertical"
+
+                    />
+
+            </RelativeLayout>
+            <View
+                style="@style/HlineViewStyle_E5"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_carid_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="4dp"
+                    android:text="*"
+                    android:textColor="@color/tvorg"
+                    android:textSize="@dimen/change_bankcard_tv_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="身份证号:"
+                    android:textColor="@color/tvblack"
+                    android:textSize="@dimen/change_bankcard_tv_size"
+                    android:layout_toRightOf="@+id/tv_carid_red"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_carid_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="12345678901234567890123"
+                    android:textSize="14sp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/agreement_tv_black"
+                    android:gravity="center_vertical"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <View
+                style="@style/HlineViewStyle_E5"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_container_height"
+        android:background="@color/white">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:text="*"
+            android:textColor="@color/tvorg"
+            android:textSize="@dimen/change_bankcard_tv_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="银行卡号:"
+            android:textColor="@color/tvblack"
+
+            android:textSize="@dimen/change_bankcard_tv_size" />
+
+        <com.yltx.modulebase.widget.ClearEditTextView
+            android:id="@+id/myca_et_cardnum"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_container_height"
+            android:background="@color/white"
+            android:hint="请输入银行卡号"
+            android:inputType="phone"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:textSize="@dimen/change_bankcard_tv_size"
+            android:textColorHint="@color/tvgrave"
+            android:textColor="@color/tvblack"
+            android:gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+            <View
+                style="@style/HlineViewStyle_E5"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_container_height"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:text="*"
+            android:textColor="@color/tvorg"
+            android:textSize="@dimen/change_bankcard_tv_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="卡有效期:"
+            android:textColor="@color/tvblack"
+            android:textSize="@dimen/change_bankcard_tv_size" />
+
+        <com.yltx.modulebase.widget.ClearEditTextView
+            android:id="@+id/myca_et_card_usetime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_container_height"
+            android:background="@color/white"
+            android:hint="请输入卡有效期, 示例格式: 0622(月/年)"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:textSize="@dimen/change_bankcard_tv_size"
+            android:textColorHint="@color/tvgrave"
+            android:textColor="@color/tvblack"
+            android:gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+            <View
+                style="@style/HlineViewStyle_E5"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_container_height"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:text="*"
+            android:textColor="@color/tvorg"
+            android:textSize="@dimen/change_bankcard_tv_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="预留手机号:"
+            android:textColor="@color/tvblack"
+
+            android:textSize="@dimen/change_bankcard_tv_size" />
+        <com.yltx.modulebase.widget.ClearEditTextView
+            android:id="@+id/myca_et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_container_height"
+            android:background="@color/white"
+            android:hint="请输入银行卡绑定的手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:textSize="@dimen/change_bankcard_tv_size"
+            android:textColorHint="@color/tvgrave"
+            android:textColor="@color/tvblack"
+            android:gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            />
+
+    </LinearLayout>
+            <View
+                style="@style/HlineViewStyle_E5"
+                />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_container_height"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_msg_start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="4dp"
+            android:text="*"
+            android:textColor="@color/tvorg"
+            android:textSize="@dimen/change_bankcard_tv_size"/>
+        <TextView
+            android:id="@+id/tvmsgtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/tv_msg_start"
+            android:text="短信验证码:"
+            android:textColor="@color/tvblack"
+            android:textSize="@dimen/change_bankcard_tv_size"
+
+            />
+
+        <!--android:layout_toLeftOf="@+id/getpwd_btn_getsms"-->
+        <com.yltx.modulebase.widget.ClearEditTextView
+            android:id="@+id/myca_et_msgcode"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_container_height"
+            android:layout_toRightOf="@+id/tvmsgtitle"
+            android:background="@color/white"
+            android:hint="请输入6位数字验证码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="@dimen/change_bankcard_tv_size"
+            android:textColorHint="@color/tvgrave"
+            android:textColor="@color/tvblack"
+            android:gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            android:layout_toLeftOf="@+id/getpwd_btn_getsms"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <com.yltx.modulewd.widght.StateButton
+            android:id="@+id/getpwd_btn_getsms"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:padding="4dp"
+            android:text="获取验证码"
+            android:textSize="12sp"
+            app:animationDuration="200"
+            app:normalStrokeColor="@color/btn_red"
+            app:normalStrokeWidth="1dp"
+            app:normalBackgroundColor="@color/btn_red"
+            app:normalTextColor="@color/white"
+            app:pressedBackgroundColor="@color/btn_red_press"
+            app:pressedStrokeWidth="1dp"
+            app:pressedStrokeColor="@color/btn_red_press"
+            app:pressedTextColor="@color/white"
+            app:unableBackgroundColor="@color/btn_red_press"
+            app:unableStrokeColor="@color/btn_red_press"
+            app:unableStrokeWidth="1dp"
+            app:radius="4dp" />
+    </RelativeLayout>
+            <View
+                style="@style/HlineViewStyle_E5"
+                />
+
+
+    <!--<com.yltx.modulewd.widght.StateButton-->
+        <!--android:id="@+id/sb_tobang"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginTop="28dp"-->
+        <!--android:text="确认绑定"-->
+        <!--android:textSize="18sp"-->
+        <!--app:animationDuration="200"-->
+        <!--app:normalStrokeColor="@color/btn_blue"-->
+        <!--app:normalStrokeWidth="1dp"-->
+        <!--app:normalBackgroundColor="@color/btn_blue"-->
+        <!--app:normalTextColor="@color/white"-->
+        <!--app:pressedBackgroundColor="@color/btn_press"-->
+        <!--app:pressedStrokeWidth="1dp"-->
+        <!--app:pressedStrokeColor="@color/btn_press"-->
+        <!--app:pressedTextColor="@color/white"-->
+        <!--app:unableBackgroundColor="@color/btn_blue"-->
+        <!--app:unableStrokeColor="@color/btn_blue"-->
+        <!--app:unableStrokeWidth="1dp"-->
+        <!--app:radius="4dp" />-->
+
+
+            <com.allen.library.SuperButton
+                android:id="@+id/sb_tonext"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="16dp"
+                android:text="确认绑定"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guide"
+                app:sCornersRadius="3dp"
+                app:sSelectorNormalColor="@color/base_color"
+                app:sSelectorPressedColor="@color/click_color"
+                app:sUseSelector="true" />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

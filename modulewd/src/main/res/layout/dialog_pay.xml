@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="支付详情"
+        android:textColor="@color/tv3"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/ic_del" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="#C6C6C6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_close" />
+
+    <TextView
+        android:id="@+id/tv_merchant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="向小蜜白卡支付"
+        android:textColor="@color/tv3"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/tv3"
+        android:textSize="35sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_merchant"
+        tools:text="Y 9200.00" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="28dp"
+        android:background="#E8E8E8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_money" />
+
+    <TextView
+        android:id="@+id/tv_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="订单内容："
+        android:textColor="@color/tv6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_content_title"
+        tools:text="个人备用金还款" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#E8E8E8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content_title" />
+
+    <TextView
+        android:id="@+id/tv_pay_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/tv3"
+        android:text="支付方式："
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+    <TextView
+        android:id="@+id/tv_pay_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/dialog_pay_item"
+        android:drawableLeft="@mipmap/ic_pay_credit_card"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="信用卡"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_pay_save"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_type" />
+
+    <TextView
+        android:id="@+id/tv_pay_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_pay_item"
+        android:drawableLeft="@mipmap/ic_pay_save_card"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="储蓄卡"
+        android:textColor="@color/tv3"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pay_credit"
+        app:layout_constraintLeft_toRightOf="@+id/tv_pay_credit"
+        app:layout_constraintRight_toLeftOf="@+id/tv_pay_wechat"
+        app:layout_constraintTop_toTopOf="@+id/tv_pay_credit" />
+
+    <TextView
+        android:id="@+id/tv_pay_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_pay_item"
+        android:drawableLeft="@mipmap/ic_pay_wchat"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="微 信"
+        android:textColor="@color/tv3"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pay_save"
+        app:layout_constraintLeft_toRightOf="@+id/tv_pay_save"
+        app:layout_constraintRight_toLeftOf="@+id/tv_pay_ali"
+        app:layout_constraintTop_toTopOf="@+id/tv_pay_save" />
+
+    <TextView
+        android:id="@+id/tv_pay_ali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_pay_item"
+        android:drawableLeft="@mipmap/ic_pay_ali"
+        android:drawablePadding="4dp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:text="支付宝"
+        android:textColor="@color/tv3"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pay_wechat"
+        app:layout_constraintLeft_toRightOf="@+id/tv_pay_wechat"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_pay_wechat" />
+
+    <TextView
+        android:id="@+id/tv_cardno"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:textColor="@color/tvo"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_pay_credit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pay_credit"
+        tools:text="中国建设银行（尾号0000）" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/btn_do"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="32dp"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cardno"
+        app:sCornersRadius="3dp"
+        app:sSelectorNormalColor="@color/base_color"
+        app:sSelectorPressedColor="@color/click_color"
+        app:sUseSelector="true" />
+
+
+</android.support.constraint.ConstraintLayout>

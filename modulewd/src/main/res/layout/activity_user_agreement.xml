@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_addcar_root"
+    android:orientation="vertical"
+    tools:context="com.yltx.modulewd.MainActivity">
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_loan_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="用户借款/还款协议"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_loan_contract"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="借款合同"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_commission_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextString="委托扣款协议"
+        app:sLeftTextColor="@color/agreement_tv_black"
+        app:sLeftTextSize="16sp"
+        app:sRightTvDrawableRight="@mipmap/my_next"
+        >
+    </com.allen.library.SuperTextView>
+
+
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_personal_information"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="个人信息使用授权书"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_sesame_certification_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="芝麻认证协议"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+        <com.allen.library.SuperTextView
+            android:id="@+id/st_sesame_credit_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:sLeftTextString="芝麻信用评分协议"
+            app:sLeftTextColor="@color/agreement_tv_black"
+            app:sLeftTextSize="16sp"
+            app:sRightTvDrawableRight="@mipmap/my_next"
+            >
+        </com.allen.library.SuperTextView>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <CheckBox
+        android:id="@+id/cb_item"
+        style="@style/checkBoxList"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv3"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/cb_item"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="借款 3000.00 元" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@color/base_color"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_money"
+        app:layout_constraintLeft_toRightOf="@+id/tv_money"
+        app:layout_constraintTop_toTopOf="@+id/tv_money"
+        tools:text="已放款" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_list_item_next"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_money"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_money" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv3"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_money"
+        app:layout_constraintTop_toBottomOf="@+id/tv_money"
+        tools:text="2017-9-1 12:00:00" />
+    <TextView
+        android:id="@+id/tv_submoney"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv3"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        android:layout_marginLeft="10dp"
+        tools:text="借款1000元" />
+
+    <TextView
+        android:id="@+id/tv_stages"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/tv6"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        tools:text="剩余2期" />
+
+
+</android.support.constraint.ConstraintLayout>

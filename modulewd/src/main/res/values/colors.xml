@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="load_success">#32A7F6</color>
+    <color name="load_failure">#32A7F6</color>
+
+
+    <color name="account_tv_black">#434343</color>
+
+    <color name="agreement_tv_black">#3e3e3e</color>
+
+    <color name="perinfo_auth_tv_black">#343434</color>
+
+    <color name="perinfo_auth_tv_grave">#9b9b9b</color>
+
+    <color name="perinfo_auth_tv_blue">#00a5ec</color>
+
+    <color name="operation_status_tv_black">#333333</color>
+
+    <color name="operation_status_tv_black2">#646464</color>
+
+    <color name="bg_blue">#31a9f3</color>
+
+    <color name="line_grave">#f4f4f4</color>
+
+
+    <color name="line_grave_e5">#e5e5e5</color>
+
+
+    <color name="tv3">#333333</color>
+    <color name="tv6">#666666</color>
+    <color name="tv9">#999999</color>
+    <color name="tvo">#FF6D19</color>
+    <color name="tvob">#FFE6D5</color>
+    <color name="tvred">#FF0000</color>
+    <color name="base_color">#32A7F6</color>
+    <color name="click_color">#108EE9</color>
+    <color name="click_n_color">#ACACAC</color>
+
+    <color name="tvorg">#FF7833</color>
+
+    <color name="tvblack">#353535</color>
+    <color name="tvgrave">#a0a0a0</color>
+
+
+    <color name="btn_red">#fe6e00</color>
+
+    <color name="btn_red_press">#ffc495</color>
+
+
+    <color name="btn_blue">#108EE9</color>
+
+    <color name="btn_press">#c6c6c6</color>
+    <color name="button_yes">#FF0000</color>
+    <color name="button_yes_click">#108EE9</color>
+    <color name="button_no">#C9C9C9</color>
+    <color name="button_no_click">#ACACAC</color>
+
+    <color name="line_progress">#CACACA</color>
+
+
+
+
+</resources>

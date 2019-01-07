@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="借款记录筛选"
+        android:textColor="@color/tv3"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorBg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dialog_filter_item"
+        android:gravity="center"
+        android:text="全部"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_for_lend"
+        app:layout_constraintTop_toBottomOf="@+id/view_top" />
+
+    <TextView
+        android:id="@+id/tv_for_lend"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/dialog_filter_item"
+        android:gravity="center"
+        android:text="待放款"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_all"
+        app:layout_constraintRight_toLeftOf="@+id/tv_loan"
+        app:layout_constraintTop_toTopOf="@+id/tv_all" />
+
+    <TextView
+        android:id="@+id/tv_loan"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/dialog_filter_item"
+        android:gravity="center"
+        android:text="已放款"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_for_lend"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_all" />
+
+    <TextView
+        android:id="@+id/tv_check_pending"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_filter_item"
+        android:gravity="center"
+        android:text="借款待审核"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_overdue"
+        app:layout_constraintTop_toBottomOf="@+id/tv_all" />
+
+    <TextView
+        android:id="@+id/tv_overdue"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/dialog_filter_item"
+        android:gravity="center"
+        android:text="已逾期"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_check_pending"
+        app:layout_constraintRight_toLeftOf="@+id/tv_brrow_fail"
+        app:layout_constraintTop_toTopOf="@+id/tv_check_pending" />
+
+    <TextView
+        android:id="@+id/tv_brrow_fail"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/dialog_filter_item"
+        android:gravity="center"
+        android:text="借款失败"
+        android:textColor="@color/tv3"
+        app:layout_constraintLeft_toRightOf="@+id/tv_overdue"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_check_pending" />
+
+    <View
+        android:id="@+id/view_botton"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_check_pending" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="取消"
+        android:textColor="@color/tv3"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_botton"
+        app:sCornersRadius="1dp"
+        app:sSelectorDisableColor="@color/button_no"
+        app:sSelectorNormalColor="@color/white"
+        app:sSelectorPressedColor="@color/button_no_click"
+        app:sUseSelector="true" />
+
+
+</android.support.constraint.ConstraintLayout>
